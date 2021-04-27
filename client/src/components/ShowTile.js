@@ -1,7 +1,4 @@
 import React from 'react'
-// import { useHistory } from 'react-router-dom'
-// import { Link } from 'react-router-dom'
-// import ShowPage from './ShowPage'
 import Media from 'react-bootstrap/Media'
 
 

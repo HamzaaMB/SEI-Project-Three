@@ -2,8 +2,11 @@ import express from 'express'
 import mongoose from 'mongoose'
 import { port, dbURI } from './config/environment.js'
 import router from './config/router.js'
+import { dirname } from 'path'
+import { fileURLToPath } from 'url'
 
 const app = express()
+const __dirname = dirname(fileURLToPath(import.meta.url))
 
 const startServer = async () => {
   try {
@@ -20,8 +23,12 @@ const startServer = async () => {
       next()
     })
 
+    app.use(express.static(`${__dirname}/frontend/build`))
+
     //! Run the router
     app.use('/api', router)
+
+    app.use('/*', (_, res) => res.sendFile(`${__dirname}/frontend/build/index.html`))
 
     //! Server
     app.listen(port, () => console.log(`🚀 Express is up and running on port ${port}`))

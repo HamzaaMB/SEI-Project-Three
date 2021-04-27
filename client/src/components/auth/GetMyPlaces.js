@@ -61,11 +61,9 @@ const GetMyPlaces = (props) => {
                   <h1 className="saved-title">{place.nameOfDestination}</h1>
                   <img
                     className="saved-img"
-                    // id="carousel-image"
                     src={place.image}
                   />
                   <p className="hidden-lat">Average Rating: {place.avgRating}</p>
-                  {/* <p className="hidden-lat">{place.description}</p> */}
                 </li>
               )
             })}

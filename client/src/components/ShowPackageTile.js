@@ -16,12 +16,9 @@ const ShowPackageTile = () => {
 
 
   const handleClick = (event) => {
-    console.log('CLICKED', event.target.value)
     setDay(event.target.value)
   }
-  console.log('day', day)
-  console.log('locations', locations)
-  console.log('ID', id)
+
 
 
   useEffect(() => {
@@ -82,10 +79,6 @@ const ShowPackageTile = () => {
       } else {
         setLocations(dayOne)
       }
-      // console.log('packageData', packageData)
-      // setLocations(packageData)
-      // console.log('dayOne', dayOne)
-      // console.log('dayTwo', dayTwo)
     }
     getData()
   }, [day])
@@ -96,12 +89,10 @@ const ShowPackageTile = () => {
       const durationData = data[id - 1].duration
       setDuration(durationData)
     }
-    // console.log('packageData', packageData)
 
     getData()
   }, [duration])
 
-  console.log('duration', duration)
 
   if (!locations) return null
   if (!duration) return null

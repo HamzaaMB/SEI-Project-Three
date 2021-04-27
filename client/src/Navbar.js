@@ -30,7 +30,6 @@ const MyNavbar = () => {
           {userIsAuthenticated() &&
             <>
               <Nav.Link href="/profile">Profile</Nav.Link>
-              {/* <button type="button" onClick={handleLogout}>Log Out</button> */}
               <Nav.Link onClick={handleLogout}>Log Out</Nav.Link>
             </>
           }

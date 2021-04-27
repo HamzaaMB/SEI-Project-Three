@@ -22,14 +22,6 @@ const UserProfile = () => {
   }, [])
 
   if (!userData) return null
-  console.log(userData)
-  // useEffect(() => {
-  //   const getPlaces = async() => {
-  //     const placesResponse = await axios.get('/api/places')
-  //     console.log(placesResponse)
-  //   }
-  //   getPlaces()
-  // }, [])
 
   return (
     <>
