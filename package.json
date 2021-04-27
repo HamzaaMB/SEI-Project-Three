@@ -19,6 +19,6 @@
     "seed": "node db/seeds.js",
     "dev": "nodemon",
     "start": "node index.js",
-    "build": "cd frontend && npm && npm run build"
+    "build": "cd client && npm && npm run build"
   }
 }
