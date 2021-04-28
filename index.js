@@ -23,12 +23,12 @@ const startServer = async () => {
       next()
     })
 
-    app.use(express.static(`${__dirname}/frontend/build`))
+    app.use(express.static(`${__dirname}/client/build`))
 
     //! Run the router
     app.use('/api', router)
 
-    app.use('/*', (_, res) => res.sendFile(`${__dirname}/frontend/build/index.html`))
+    app.use('/*', (_, res) => res.sendFile(`${__dirname}/client/build/index.html`))
 
     //! Server
     app.listen(port, () => console.log(`🚀 Express is up and running on port ${port}`))
