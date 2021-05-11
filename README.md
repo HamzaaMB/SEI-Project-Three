@@ -121,7 +121,7 @@ Currently, when the user saves a location to their profile, once that popup is s
 
 ## Future Content & Improvements
 
-* Give users the ability to delete saved places on their profile, time was short and we weren\t able to add that as it was a NTH.
+* Give users the ability to delete saved places on their profile, time was short and we weren't able to add that as it was a NTH.
 * Users can create a whole package rather than only save locations.
 * Error handling
 * More places stored
