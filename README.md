@@ -53,7 +53,7 @@ App has been deployed with Netlify can be viewed here: [Icelander](https://icela
 
 A MERN-stack app that would assist users in planning their trips around Iceland. The app offers pre-built packages, where the user can view these places, they include restaurants, activities, volcanoes and so forth, on an interactive map. Added functionality includes authenticated users who can save these places to their profile in an attempt to create their own trip.
 
-![screenshots](https://github.com/HamzaaMB/SEI-Project-Three/blob/main/client/screenshots/homepage1.png
+![screenshots](https://github.com/HamzaaMB/SEI-Project-Three/blob/main/client/screenshots/homepage1.png)
 
 ## Approach Taken
 
