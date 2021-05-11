@@ -1,7 +1,5 @@
 import React from 'react'
-// import { useHistory } from 'react-router-dom'
 import { Link } from 'react-router-dom'
-// import ShowPage from './ShowPage'
 
 
 const LargeTile = (props) => {
@@ -33,7 +31,6 @@ const LargeTile = (props) => {
             </div>
             <div className="description-tile">
               <div className="hover-area">
-                {/* <div className="hover-area" onClick={handleClick}> */}
                 <p className="tile-description">
                   {props.description}
                 </p>

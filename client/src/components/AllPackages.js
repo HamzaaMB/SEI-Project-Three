@@ -3,21 +3,17 @@ import axios from 'axios'
 import LargeTile from './LargeTile'
 import Navbar from '../Navbar'
 import Carousel from 'react-bootstrap/Carousel'
-// import ShowPage from './ShowPage'
-// import { Link } from 'react-router-dom'
+
 
 
 
 const AllPackages = () => {
 
-  // console.log(ShowPage)
+
 
   const [packages, setPackages] = useState([])
-  // console.log(setPackageData)
-
-  //! UNCOMMENT BELOW
   const [toggle, setToggle] = useState(null)
-  console.log('toggle >>>', toggle)
+
 
   const handleClick = (event) => {
     console.log('CLICKED', event.target.value)
@@ -40,8 +36,6 @@ const AllPackages = () => {
       } else {
         setPackages(data)
       }
-      console.log('Summer packages', summerPackages)
-      console.log('Winter packages', winterPackages)
     }
     getData()
   }, [toggle])
@@ -50,7 +44,6 @@ const AllPackages = () => {
 
 
   if (packages.length < 1) return null
-  console.log('PACKAGES>>>>', packages)
 
   return (
     <>
@@ -93,14 +86,6 @@ const AllPackages = () => {
         <div className="scroll-filter" >
           <div className="button-bar">
             <div className="drop-downs">
-              {/* <div className="bootstrap-button">
-                <DropdownButton id="dropdown-basic-button" variant="light" title="Duration" className="bring-to-front">{' '}
-                  <Dropdown.Item href="#/packages/summer">7 Days</Dropdown.Item>
-                  <Dropdown.Item href="#/packages/winter">8 Days</Dropdown.Item>
-                  <Dropdown.Item href="#/packages/winter">10 Days</Dropdown.Item>
-                  <Dropdown.Item href="#/packages">All</Dropdown.Item>
-                </DropdownButton>
-              </div> */}
             </div>
           </div>
           <div className="filters">
@@ -110,14 +95,11 @@ const AllPackages = () => {
           </div>
           <ul className="packages-ul" id="no-scroll1">
             {packages.map(trip => (
-              // <Link to={`/packages/${trip._id}`} key={trip._id}>
               <LargeTile key={trip._id} {...trip} />
-              // </Link>
             ))}
           </ul>
         </div>
       </div>
-      {/* </div> */}
     </>
   )
 

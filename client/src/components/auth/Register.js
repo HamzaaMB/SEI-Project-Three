@@ -19,8 +19,6 @@ const Register = () => {
 
   const handleChange = event => {
     //? set state when user types
-    /// console.log(event.target.value)
-    /// console.log(formData['username'])
     const newFormData = { ...formData, [event.target.name]: event.target.value }
     setFormData(newFormData)
   }
@@ -31,7 +29,6 @@ const Register = () => {
       const response = await axios.post('/api/register', formData)
       console.log(response)
     } catch (err) {
-      console.log(err)
       setErrors(err)
     }
   }
