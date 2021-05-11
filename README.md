@@ -53,7 +53,7 @@ App has been deployed with Netlify can be viewed here: [Icelander](https://icela
 
 A MERN-stack app that would assist users in planning their trips around Iceland. The app offers pre-built packages, where the user can view these places, they include restaurants, activities, volcanoes and so forth, on an interactive map. Added functionality includes authenticated users who can save these places to their profile in an attempt to create their own trip.
 
-![screenshots](homepage)
+![screenshots](https://github.com/HamzaaMB/SEI-Project-Three/blob/main/client/screenshots/homepage1.png
 
 ## Approach Taken
 
@@ -61,11 +61,11 @@ A MERN-stack app that would assist users in planning their trips around Iceland.
 
 As a team, we had an idea of how each component should look like as we decided to use Excalidraw and create all the components. This helped us delegate tasks to each other and make sure we didn’t overlap on anything as merging would prove difficult once it came to committing our work to GitHub. Although the styling of our components changed over time given the tight deadline, our goal remained the same.
 
-![screenshots](wireframe)
+![screenshots](https://github.com/HamzaaMB/SEI-Project-Three/blob/main/client/screenshots/Iceland%20Wireframe%20.png)
 
 Trello helped in keeping track of these tasks, we decided what the MVP should look like and what would some Nice-To-Haves consist of, given we had extra time left at the end of the project.
 
-![screenshots](trello)
+![screenshots](https://github.com/HamzaaMB/SEI-Project-Three/blob/main/client/screenshots/trello.png)
 
 As this was our first time using feature branches and GitHub as a team, we decided any time someone pushes to the main branch, we should all do it together. This made for great communication as we would always be vocal about which component we are working on and helped each other through potential merge conflicts. 
 
@@ -73,34 +73,34 @@ As this was our first time using feature branches and GitHub as a team, we decid
 
 We first decided what our models should look like and created the back-end together. This included setting up Mongoose and Express first, which we attempted as a group. Then came the setup for the models. As our vision for the project was to include Mapbox and have all the locations pop-up on there, we knew our models would need to be based around that. We created a model called Places which would carry all the information about a certain place and specifically the longitude and latitude as that was pivotal to our plan. 
 
-![screenshots](placeschema)
+![screenshots](https://github.com/HamzaaMB/SEI-Project-Three/blob/main/client/screenshots/placeschema.png)
 
 Next we created the user model. This consisted of the standard email and password authentication developed through JWT, and based on that authentication, we were able to give the user the ability to add places to their profile. This was key as we wanted the users to be able to have their own saved places on their account and be able to store them.
 
-![screenshots](savedplace)
+![screenshots](https://github.com/HamzaaMB/SEI-Project-Three/blob/main/client/screenshots/savedplace.png)
 
 Moving on, we decided that each package, once clicked by the user would redirect them to the view with mapbox connected showing the daily itinerary. This proved tricky as the task of creating multiple booleans would be prone to errors but thanks to the team, we were able to create datasets on a excel sheet and delegate each of these locations to a specific day, helping the user to have a well thought out plan for their trip. 
 
-![screenshots](map)
+![screenshots](https://github.com/HamzaaMB/SEI-Project-Three/blob/main/client/screenshots/map.png)
 
 After much testing, our final layout for each dataset below looked like this, consisting of booleans to help us delegate each place to a package which would then be called out on the frontend with ease, giving us the final product of the screenshot above.
 
-![screenshots](data)
+![screenshots](https://github.com/HamzaaMB/SEI-Project-Three/blob/main/client/screenshots/data.png)
 
 This project also presented the new task of us using mapbox which at the time proved to be difficult. One of the main features we wanted to add was a route that would highlight the user’s journey related to the package they have picked. After diving into the documentation and installing versions of mapbox that were all but deprecated, we scrapped that plan. My teammate Patrick also emailed the person who was responsible for maintaining that package and we got a response a bit later past the deadline. 
 
 We also found that some packages were still available but were not usable with React, which was a lesson well learnt for any future projects that involve mapbox.
 
-![screenshots](mapbanner)
+![screenshots](https://github.com/HamzaaMB/SEI-Project-Three/blob/main/client/screenshots/mapbanner.png)
 
 However, we did add most of the features from mapbox that we wanted to implement. Including markers, zoom and popups that we added functionality to. This made for the user journey to be smooth as they would not only view the place and its details but also be able to save it to their profile. As seen in the code previously, this require authentication, so the user would need to be logged in otherwise it would leave a message to the user requesting them to login.
 
-![screenshots](mapsave)
+![screenshots](https://github.com/HamzaaMB/SEI-Project-Three/blob/main/client/screenshots/mapsave.png)
 
 The code below shows we needed to authenticate the user and show either the save button or a message to login based on the condition met.The handleClick function was set for this reason.
 
-![screenshots](handleclick)
-![screenshots](savedmessage)
+![screenshots](https://github.com/HamzaaMB/SEI-Project-Three/blob/main/client/screenshots/handleclick.png)
+![screenshots](https://github.com/HamzaaMB/SEI-Project-Three/blob/main/client/screenshots/savedmessage.png)
 
 ## Wins, Challenges & Bugs
 
