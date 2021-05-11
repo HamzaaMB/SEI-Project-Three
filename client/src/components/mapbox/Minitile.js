@@ -22,7 +22,6 @@ const Minitile = ({ _id, image, nameOfDestination, typeOfDestination, descriptio
         Authorization: `Bearer ${token}`
       }
     })
-    console.log('YAY! I SAVED A PLACE AND NOW I CANNOT FIND IT!')
   }
   console.log(_id)
   return (
